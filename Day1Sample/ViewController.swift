@@ -10,11 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var txt1: UITextField!
+    
+    @IBOutlet weak var txt2: UITextField!
+    @IBOutlet weak var lblres: UILabel!
+}
+   
+    
+   
+    @IBAction func btnadd(_ sender: Any) {
+        var a=Int(txt1.text!)
+        var b=Int(txt2.text!)
+        
+        let c=a!+b!
+        
+        lblres.text="add:\(c)"
+        
+       
+    
+        func btnsub(_ sender: Any) {
     }
-
-
+    
+        func btndiv(_ sender: Any) {
+    }
+    
+    @IBAction func btnmul(_ sender: Any) {
+    }
+   
 }
 
